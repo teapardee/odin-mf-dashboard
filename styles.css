@@ -38,6 +38,7 @@ body {
   font-weight: 700;
   margin: 10px;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 nav {
@@ -56,6 +57,7 @@ nav {
   margin: 0px 10px 10px 10px;
   border-radius: 15px;
   height: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 img {
@@ -136,3 +138,37 @@ input::placeholder {
 }
 
 /* Main Container */
+
+.main-container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 2fr 2fr;
+  grid-area: 2 / 2 / 8 / 3;
+  gap: 10px;
+  margin: 0 10px 10px 0;
+}
+
+.tile {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.fund-name {
+  grid-column: 1 / span 2;
+}
+
+.fund-details {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.fund-diversification {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.fund-holdings {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
