@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -7,6 +8,7 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   --primary-color: #4988ac;
+  --secondary-color: #626262;
 }
 
 input,
@@ -104,7 +106,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-width: 20vw;
+  min-width: 25vw;
   margin-right: 50px;
 }
 
@@ -149,9 +151,11 @@ input::placeholder {
 
 .tile {
   display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 2rem;
 }
 
 .fund-name {
@@ -171,4 +175,21 @@ input::placeholder {
 .fund-holdings {
   grid-column: 3 / span 2;
   grid-row: 3 / span 2;
+}
+
+/* Tiles */
+
+.tile-header-bold {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.tile > p {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 200;
+  align-items: center;
 }
