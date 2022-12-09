@@ -9,6 +9,8 @@
   letter-spacing: 2px;
   --primary-color: #4988ac;
   --secondary-color: #626262;
+  --darkfont: black;
+  color: var(--secondary-color);
 }
 
 input,
@@ -63,8 +65,8 @@ nav {
 }
 
 img {
-  height: 2.8rem;
-  width: 2.8rem;
+  height: 2.2rem;
+  width: 2.2rem;
 }
 
 /* Header */
@@ -182,7 +184,11 @@ input::placeholder {
 .tile-header-bold {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--secondary-color);
+}
+
+.tile-header-thin {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .tile > p {
@@ -192,4 +198,14 @@ input::placeholder {
   line-height: 2.5rem;
   font-weight: 200;
   align-items: center;
+}
+
+.tile-number {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 2.8rem;
+  color: var(--darkfont);
+  font-weight: 800;
 }
