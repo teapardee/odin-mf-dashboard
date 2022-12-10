@@ -41,8 +41,10 @@ const fundDetails = [
 
 var details = document.querySelector(".fund-details");
 var table = document.createElement("table");
+var tbody = document.createElement("tbody");
 
 details.appendChild(table);
+table.appendChild(tbody);
 
 for (i = 0; i < 9; i++) {
   var tableRow = document.createElement("tr");
@@ -52,7 +54,7 @@ for (i = 0; i < 9; i++) {
   cellDetailType.innerHTML = `${fundDetails[i].detailType}`;
   cellValue.innerHTML = `${fundDetails[i].value}`;
 
-  table.appendChild(tableRow);
+  tbody.appendChild(tableRow);
   tableRow.appendChild(cellDetailType);
   tableRow.appendChild(cellValue);
 }
